@@ -1,38 +1,122 @@
 .App {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  margin-bottom: 3em;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
+body {
   flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  padding-bottom: 2em;
+  background:#8EBBDE;
+}
+
+.navbar-brand {
+  color: white !important;
+  font-weight: 600;
+}
+
+.brand-link {
+  display: inline-block;
+  width: 100%;
+}
+
+.footer {
+  position:fixed;
+  bottom:0;
+  text-align: center;
+  width:100%;
+  font-size: .8em;
+  color: #ccc;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6c757d;
+}
+
+.fooer-text {
+  margin-bottom:0;
+  padding: .7em 0;
+}
+
+.card-body  {
+  padding:0; 
+}
+.form-control {
+  border:0;
+}
+form {
+  margin-top:3em !important; 
+  width:90%;
+}
+
+#home .card{
+  margin-bottom: 2em;
+}
+
+#home .title{
+  margin: 1em 0;
+}
+
+.previsions {
+  width:100%;
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: space-between;
+  color:white;
 }
 
-.App-link {
-  color: #61dafb;
+.previsions-item {
+  width: 100%;
+  padding: 1em;
+  border-radius: 0.2em;
+  margin: 1em;
+  border: solid rgba(255,255,255, 0.5);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.previsions-item-strName {
+  font-size: 1.2em;
+  margin-bottom: 0em;
 }
+.previsions-item-day {
+  font-size: .9em;
+  margin-bottom: 0;
+}
+
+.previsions-item-temp {
+  font-size: 2em;
+}
+.previsions-item-strName::first-letter {
+  text-transform: uppercase;
+}
+
+.btn-retour {
+  background: #eee;
+}
+
+.link-retour {
+  text-decoration: none;
+  color: #666 !important;
+}
+.btn-retour.sticky-top {
+  top: 3.5em;
+}
+
+.link-retour:before{
+  content: "<";
+  display:inline-block;
+  margin-right: 0.5em;
+  color: #666;
+}
+
+.link-retour:hover{
+  text-decoration: none !important;
+}
+
+#details .title {
+  padding-top:2em
+}
+
